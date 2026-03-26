@@ -17,7 +17,9 @@ trend_analysis AS (
 )
 SELECT 
     "Time",
-    CASE WHEN "Volume" >= "Prev_Volume" OR "Prev_Volume" IS NULL THEN "Volume" ELSE NULL END AS "Growth",
-    CASE WHEN "Volume" < "Prev_Volume" THEN "Volume" ELSE NULL END AS "Decline"
+    CASE WHEN "Volume" >= "Prev_Volume" OR "Prev_Volume" IS NULL 
+         THEN "Volume" / 1e6 ELSE NULL END AS "Inflow_M",
+    CASE WHEN "Volume" < "Prev_Volume" 
+         THEN "Volume" / 1e6 ELSE NULL END AS "Outflow_M"
 FROM trend_analysis
 ORDER BY "Time" ASC;
