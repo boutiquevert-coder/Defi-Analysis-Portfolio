@@ -30,7 +30,11 @@ I am available for global remote projects and strategic collaborations.
 * **Availability**: Remote (EU/UK Timezones)
 * **Business Structure**: Available for B2B contracts (UK-based entity)
 
-  ### Dashboard Preview
+🐋 **Institutional USDC Whale Tracker**
+Live Dashboard: [[Link către Dune-ul tău]](https://dune.com/gavrilili/institutional-usdc-whale-analysis)
+
+📊 **Project Overview**
+### Dashboard Preview
 ![Dashboard Screenshot](visuals/New_Project_2.jpg) 
 
 ### Technical Analysis
