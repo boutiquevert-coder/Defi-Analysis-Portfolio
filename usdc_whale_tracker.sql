@@ -12,14 +12,14 @@ trend_analysis AS (
     SELECT 
         "Time",
         "Volume",
-        LAG("Volume") OVER (ORDER BY "Time") AS "Prev_Volume"
+        LAG("Volume") OVER (ORDER BY "Time") AS "Prev_Volume",
+        AVG("Volume") OVER (ORDER BY "Time" ROWS BETWEEN 3 PRECEDING AND CURRENT ROW) AS "Trend_Line_M"
     FROM hourly_data
 )
 SELECT 
     "Time",
-    CASE WHEN "Volume" >= "Prev_Volume" OR "Prev_Volume" IS NULL 
-         THEN "Volume" / 1e6 ELSE NULL END AS "Inflow_M",
-    CASE WHEN "Volume" < "Prev_Volume" 
-         THEN "Volume" / 1e6 ELSE NULL END AS "Outflow_M"
+    CASE WHEN "Volume" >= "Prev_Volume" OR "Prev_Volume" IS NULL THEN "Volume" / 1e6 ELSE NULL END AS "Inflow_M",
+    CASE WHEN "Volume" < "Prev_Volume" THEN "Volume" / 1e6 ELSE NULL END AS "Outflow_M",
+    "Trend_Line_M" / 1e6 AS "Moving_Average_M"
 FROM trend_analysis
 ORDER BY "Time" ASC;
