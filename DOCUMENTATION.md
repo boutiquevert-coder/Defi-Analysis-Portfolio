@@ -20,7 +20,7 @@ The core of this project lies in filtering high-value liquidity movements on the
 * **Time Window:** Rolling **24-hour** analysis.
 
 <div align="center">
-  <img src="visuals/9E829DC8-A762-4AF3-ACC1-FB8B49A44E22.png" width="850" alt="Counter Analytics" />
+  <img src="whale_inflow_counter.jpg" width="850" alt="Counter Analytics" />
   <p><i>Figure 1: Real-time Inflow Counter showing institutional accumulation.</i></p>
 </div>
 
@@ -31,7 +31,7 @@ To ensure the data is actionable, we implemented two distinct layers of visualiz
 2.  **Micro View (Bar Chart):** Analyzes volatility and peaks. Notice the massive spikes at **6,214** and **5,737** units, indicating coordinated whale entries.
 
 <div align="center">
-  <img src="visuals/3B6EF4CF-ACE6-4810-AABC-6C76A5B1A02A.png" width="850" alt="Whale Analysis Chart" />
+  <img src="whale_activity_chart.jpg" width="850" alt="Whale Analysis Chart" />
   <p><i>Figure 2: Hourly breakdown of transaction value ($).</i></p>
 </div>
 
@@ -40,7 +40,7 @@ To keep this repository clean, use the following syntax for new assets:
 
 | Asset Type | Markdown/HTML Syntax |
 | :--- | :--- |
-| **Images** | `<img src="visuals/filename.png" width="600">` |
+| **Images** | `<img src="filename.jpg" width="600">` |
 | **Links** | `[Text](URL)` |
 | **Reports** | `[Download PDF](Institutional_USDC_Whale_Analysis_Dune.pdf)` |
 
