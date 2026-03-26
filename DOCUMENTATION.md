@@ -6,7 +6,7 @@
   <hr />
 
   <a href="https://dune.com/gavrilili/institutional-usdc-whale-analysis">
-    <img src="https://img.shields.io/badge/View_Live_Dashboard-Dune_Analytics-orange?style=for-the-badge&logo=dune" />
+    <img src="https://img.shields.io/badge/View_Live_Dashboard-Dune_Analytics-blue?style=for-the-badge&logo=dune" />
   </a>
 </div>
 
