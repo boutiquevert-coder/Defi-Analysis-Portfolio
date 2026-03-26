@@ -16,4 +16,4 @@
 * **Code**: [View SQL Script](./usdc_whale_tracker.sql)
 
 ---
-📫 **Connect with me**: [Link your LinkedIn profile here]
+📫 **Connect with me**: 📫 Direct Professional Inquiries: boutiquevert@gmail.com
